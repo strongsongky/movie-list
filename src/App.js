@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Movie from "./components/Movie";
+import { data } from "./mockData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="appContainer">
+        {data.results.map((item) => {
+          return (
+            <Movie
+              title={item.title}
+              poster_path={item.poster_path}
+              release_date={item.release_date}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
