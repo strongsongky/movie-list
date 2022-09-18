@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from 'react'
 
 export default function Movie({ title, poster_path, release_date }) {
   return (
@@ -8,9 +8,9 @@ export default function Movie({ title, poster_path, release_date }) {
         alt="포스터"
       />
       <div className="movieDetail">
-        <p>{title}</p>
+        <p >{title}</p>
         <p>{release_date}</p>
       </div>
     </div>
-  );
+  )
 }

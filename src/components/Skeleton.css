@@ -1,0 +1,23 @@
+.movieContainer {
+  width: 20rem;
+  border: 0.05rem solid silver;
+  margin: 1.3rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(40, 39, 39, 0.942);
+}
+
+.imgContainer {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #e0e0e0;
+}
+
+.movieDetail {
+  padding: 1.1rem;
+}
+
+.movieDetail p {
+  font-size: 1.2rem;
+  background-color: #e0e0e0;
+}

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import request from './utils/axiosClient'
 import { requestUrl } from './config'
 import httpStatusErrorHandler from './utils/errorHandler'
+import Skeleton from './components/Skeleton'
 
 const App = () => {
   const [movies, setMovies] = React.useState([])
@@ -76,8 +77,9 @@ const App = () => {
   return (
     <div>
       <div className="appContainer">
-        {isLoading && <h1>로딩중입니다 !</h1>}
-        {movies.map((data) => {
+        {/* {isLoading && <Skeleton />} */}
+        <Skeleton />
+        {/* {movies.map((data) => {
           return (
             <Movie
               title={data.title}
@@ -85,7 +87,7 @@ const App = () => {
               release_date={data.release_date}
             />
           )
-        })}
+        })} */}
       </div>
     </div>
   )
